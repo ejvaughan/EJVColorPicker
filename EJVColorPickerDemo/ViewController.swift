@@ -9,17 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var colorPicker: EJVColorPicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.colorPicker.colors = [ UIColor.red, UIColor.green, UIColor.blue, UIColor.orange, UIColor.yellow, UIColor.purple, UIColor.black, UIColor.cyan, UIColor.brown ]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
